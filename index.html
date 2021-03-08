@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="viewport">
-      <div class="scene3D-container">
+      <div class="scene3D">
         <div class="plane3D">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -15,6 +15,7 @@
           <div class="line4"></div>
         </div>
         <div class="timeline3D">
+          <!-- This timelines could be added with JavaScript reading the years of the database.json -->
           <div class="tline1"><p>1985</p><hr></div>
           <div class="tline2"><p>1990</p><hr></div>
           <div class="tline3"><p>1995</p><hr></div>
@@ -22,12 +23,14 @@
           <div class="tline5"><p>2005</p><hr></div>
           <div class="tline6"><p>2010</p><hr></div>
         </div>
-        <div class="scene3D"></div>
+        <div class="itemsContainer3D"></div>
       </div>
     </div>
-    <div class="categories">
-      <div class="cat1">Categoría 1</div>
-      <div class="cat2">Categoría 2</div>
+    <div class="categories2D">
+      <div class="catItem">Categoría 1</div>
+      <div class="catItem">Categoría 2</div>
+      <div class="catItem">Categoría 3</div>
+      <div class="catItem">Categoría 4</div>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
