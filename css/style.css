@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:900");
+:root {
+  --scenePerspective: 1;
+  --scenePerspectiveOriginX: 50;
+  --scenePerspectiveOriginY: 30;
+  --itemZ: 2;
+  --camaraPerspective: 100;
+  --cameraZ: 0;
+  --viewportHeight: 0;
+  --scene3DSpeed: 1;
+  --timeLineSpeed: 0.58;
+  --timeLineOffset: 150;
+}
+
+body {
+  background-image: url(../images/background.svg);
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: #272935;
+  color: #272935;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  text-align: center;
+}
+
+.viewport {
+  height: calc(var(--viewportHeight) * 1px);
+}
+
+.scene3D-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  perspective: calc(var(--scenePerspective) * var(--camaraPerspective) * 1px);
+  /* perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc(var(--scenePerspectiveOriginY) * 1%); */
+  perspective-origin: 50% 30%;
+  will-change: perspective-origin;
+  transform: translate3d(0, 0, 0);
+}
+
+.scene3D {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(calc(var(--cameraZ) * var(--scene3DSpeed) * 1px ));
+  will-change: transform;
+}
+
+.scene3D > div {
+  position: absolute;
+  display: block;
+  overflow-y: auto;
+  height: 300px;
+  width: 50%;
+  top: 40%;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .scene3D > div {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .scene3D > div {
+    width: 25%;
+  }
+}
+
+/* Arange even elements to the left and odd elements to the right  */
+.scene3D > div:nth-child(2n) {
+  left: 5%;
+}
+
+.scene3D > div:nth-child(2n + 1) {
+  right: 5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.scene3D > div h2 {
+  margin-top: 0;
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5rem;
+}
+
+.plane3D {
+  display: flex;
+  background: red;
+  position: absolute;
+  left: 25%;
+  height: 100vh;
+  width: 50%;
+  transform: rotateX(-90deg) translateY(420px);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.plane3D div[class^='line'] {
+  left: 25%;
+  height: 100vh;
+  width: 50%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.timeline3D {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(calc(var(--cameraZ) * var(--timeLineSpeed) * 1px + calc(var(--timeLineOffset) * 1px)));
+  will-change: transform;
+}
+
+.timeline3D > div {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50%;
+}
+
+.timeline3D p {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.tline1 {
+  transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * 1 * -1px));
+}
+
+.tline2 {
+  transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * 2 * -1px));
+}
+
+.tline3 {
+  transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * 3 * -1px));
+}
+
+.tline4 {
+  transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * 4 * -1px));
+}
+
+.tline5 {
+  transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * 5 * -1px));
+}
+
+.tline6 {
+  transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * 6 * -1px));
+}
+
+.tline7 {
+  transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * 7 * -1px));
+}
+
+.tline8 {
+  transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * 8 * -1px));
+}
+
+.axisX {
+  display: flex;
+  background: blue;
+  position: fixed;
+  left: 20%;
+  bottom: 30%;
+  height: 80px;
+  width: 60%;
+  border: 1px solid;
+  z-index: 1;
+  opacity: 0.8;
+  padding: 20px 2% 0 2%;
+}
+
+.cat1 {
+  display: inline-block;
+  position: absolute;
+  left: 7%;
+  border: 1px solid;
+}
+
+.cat2 {
+  display: inline-block;
+  position: absolute;
+  right: 7%;
+  border: 1px solid;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
