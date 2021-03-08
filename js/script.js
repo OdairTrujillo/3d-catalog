@@ -51,9 +51,8 @@ function setSceneHeight() {
 
 function createJournalItem(journal, node) {
   return `<div id=item${node} style="
-                      -webkit-transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * ${node} * -1px));
-                              transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * ${node} * -1px));
-                              background-color: hsl(${-30 + node * 30}, 100%, 88%);
+                      transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * ${node} * -1px));
+                      background-color: hsl(${-30 + node * 30}, 100%, 88%);
                               ">
     <a href=${journal.url}><h2>${journal.title}</h2></a>
     <p>Año: ${journal.release_date}</p>
