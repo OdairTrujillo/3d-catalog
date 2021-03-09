@@ -31,7 +31,7 @@ function setSceneHeight() {
 
 function createBookItem(book, node) {
   return `<div id=item${node} style="
-                      transform: translateZ(calc(var(--itemSpacing) * var(--scenePerspective) * ${node} * -1px));
+                      transform: translateZ(calc(var(--itemZ) * var(--camaraPerspective) * ${node} * -1px));
                       background-color: hsl(${-30 + node * 30}, 100%, 88%);
                               ">
     <a href=${book.url}><h2>${book.title}</h2></a>
