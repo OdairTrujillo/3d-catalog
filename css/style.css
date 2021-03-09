@@ -1,12 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:900");
+@import url("https://fonts.googleapis.com/css?family=Sofia|Trirong");
 :root {
-  --viewportHeight: 0;
+  /* The more perspective more item spacing should you give. */
   --scenePerspective: 100;
   --itemSpacing: 2;
-  --cameraZ: 0;
-  --scene3DSpeed: 1;
+  /* This two speed parameters allows you to adjust the scroll speed of the items and timelines separately  */
+  --itemsSpeed: 1;
   --timeLineSpeed: 0.58;
+  /* How near to the scree do you want to see the first timeline */
   --timeLineOffset: 150;
+  --viewportHeight: 0;
+  --cameraZ: 0;
 }
 
 *,
@@ -26,7 +29,7 @@ body {
 }
 
 h1 {
-  font-family: "Playfair Display SC", serif;
+  font-family: "Sofia", serif;
   font-size: 1.5rem;
   color: white;
   margin: 0;
@@ -57,7 +60,7 @@ h1 {
   height: 100vh;
   width: 100%;
   transform-style: preserve-3d;
-  transform: translateZ(calc(var(--cameraZ) * var(--scene3DSpeed) * 1px ));
+  transform: translateZ(calc(var(--cameraZ) * var(--itemsSpeed) * 1px ));
   will-change: transform;
 }
 
@@ -94,7 +97,7 @@ h1 {
 
 .itemsContainer3D > div h2 {
   margin-top: 0;
-  font-family: "Playfair Display SC", serif;
+  font-family: "Trirong", serif;
   font-size: 1.5rem;
 }
 
