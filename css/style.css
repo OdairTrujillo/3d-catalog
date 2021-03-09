@@ -3,7 +3,7 @@
   /* The more perspective more item spacing should you give. */
   --scenePerspective: 100;
   --itemSpacing: 2;
-  /* This two speed parameters allows you to adjust the scroll speed of the items and timelines separately  */
+  /* This two speed parameters allows you to adjust the scroll speed of the items and timelines separately */
   --itemsSpeed: 1;
   --timeLineSpeed: 0.58;
   /* How near to the scree do you want to see the first timeline */
