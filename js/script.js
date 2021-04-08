@@ -1,8 +1,22 @@
+/*
+NOTE: You have to copy your database.json to a server and enable CORS with
+something like this in Apache:
+
+  <Directory /var/www/host.example.com/public_html/>
+            Order Allow,Deny
+            Allow from all
+            AllowOverride all
+            Header set Access-Control-Allow-Origin "*"
+  </Directory>
+
+Also, you can disable CORS in your web browser, but consider that this is note sucure.
+*/
+
 let books = [];
 
 // On load document add the event listeners when scroll and mouse. Also create items.
 document.addEventListener("DOMContentLoaded", function() {
-  axios.get("https://hermes.sciocorp.org/data/database.json").then(function(response) {
+  axios.get("https://contrib.odair.dev/data/database.json").then(function(response) {
       books = response.data;
       appendBooks(books);
       window.addEventListener("scroll", moveCamera);
@@ -28,7 +42,10 @@ function setSceneHeight() {
   // Update --viewportHeight value
   document.documentElement.style.setProperty("--viewportHeight", height);
 }
-
+/*
+NOTE: The node variable could be used to position the item into the timeline, you could use also the
+year of the item and make some calculations in order to position the item exactly where it belongs.
+*/
 function createBookItem(book, node) {
   return `<div id=item${node} style="
                       transform: translateZ(calc(var(--itemSpacing) * var(--scenePerspective) * ${node} * -1px));
