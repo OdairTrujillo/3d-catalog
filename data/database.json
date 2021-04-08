@@ -25,7 +25,7 @@
     "description": "Michael Dillon, y su esposa, Moira Dillon, están de rehenes en su casa por terroristas miembros del IRA. La razón es que Dillon, como gerente del hotel, puda conducir su auto, el cual tiene una bomba, para matar un reverendo protestante,a lo miembros del Orden de los Orange, protestantes militantes y todos los que estén presentes en el lugar.",
     "author": "Brian Moore",
     "editorial": "Nan A. Talese",
-    "release_date": "1990",
+    "release_date": "1993",
     "isbn": "978-9501511062",
     "url": "https://es.linkfang.org/wiki/Mentiras_del_silencio"
   },
@@ -35,7 +35,7 @@
     "description": "Cuenta la historia del cabo piurano Lituma, quien, junto con su compañero, el guardia cuzqueño Tomás Carreño, llamado también Tomasito, es destinado para servir en un puesto olvidado en Naccos, un pueblito de la sierra central del Perú, en medio de la guerra desatada por el grupo terrorista Sendero Luminoso.",
     "author": "Mario Vargas Llosa",
     "editorial": "Editorial Planeta",
-    "release_date": "1993",
+    "release_date": "1994",
     "isbn": "9788491220565",
     "url": "https://www.planetadelibros.com.co/libro-lituma-en-los-andes/159003"
   },
@@ -55,7 +55,7 @@
     "description": "Ayla y Jondalar terminan su viaje de un año a través de Europa en compañía de sus amigos animales Lobo, y los caballos Whinney y Corredor, y son recibidos por los Zelandonii, el pueblo de Jondalar. Ayla se siente fascinada por la gente de la Novena Caverna de los Zelandonii.",
     "author": "Jean M. Auel.",
     "editorial": "Crown Publishing Group",
-    "release_date": "2002",
+    "release_date": "2000",
     "isbn": "978-84-15120-17-9",
     "url": "https://www.maeva.es/colecciones/hijos-de-la-tierra/los-refugios-de-piedra"
   },
@@ -64,9 +64,19 @@
     "title": "Los girasoles ciegos",
     "description": "Este libro es el regreso a las historias reales de la posguerra que contaron en voz baja narradores que no querían contar cuentos sino hablar de sus amigos, de sus familiares desaparecidos, de ausencias irreparables. Son historias de los tiempos del silencio, cuando daba miedo que alguien supiera que sabías.",
     "author": "Alberto Méndez",
-    "editorial": "Editorial Anagrama ",
+    "editorial": "Editorial Anagrama",
     "release_date": "2004",
     "isbn": "978-84-339-6855-5",
     "url": "https://www.anagrama-ed.es/libro/narrativas-hispanicas/los-girasoles-ciegos/9788433968555/NH_354"
+  },
+  {
+    "id": "1b67aa9a-2e4a-45af-ac98-64d6ad15b16c",
+    "title": "La catedral del mar",
+    "description": "Siglo XIV, Barcelona. Bajo la Corona de Aragón, la Ciudad Condal se encuentra en su momento de mayor prosperidad y los habitantes del humilde barrio de pescadores de la Ribera deciden construir, con el dinero de unos y los esfuerzos de otros, el mayor templo mariano jamás conocido: Santa María del Mar..",
+    "author": "Ildefonso Falcones",
+    "editorial": "Random House Mondadori, S.A.",
+    "release_date": "2006",
+    "isbn": "978-84-253-4003-1",
+    "url": "https://web.archive.org/web/20120620103923/http://www.lacatedraldelmar.es/libro.html"
   }
 ]
